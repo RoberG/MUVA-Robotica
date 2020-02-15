@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Example Post
-description: Find all data types and their styles here. Things like markdown table, syntax highlighting, table of contents are avaible. 
-categories: general
-author: ashwathama
+title: Práctica 1 - Siguelineas
+description: Memoria de la práctica 1, donde se explicarán los progresos realizados en su desarrollo
+categories: 
+author: Roberto Gallardo Cava
 ---
 
 ![sample post]({{site.baseurl}}/images/image-2.png)
