@@ -11,7 +11,7 @@ En esta práctica se pretende realizar un algortimo que se encargue del pilotaje
 Dicha linea es de color rojo y se encuentra ubicada en el centro de la pista para facilitar su detección. En esta práctica se utilizarán tanto técnicas de detección de imagen 
 como controladores PID para encontrar una solución que satisfaga el problema.
 
-![sample post]({{site.baseurl}}/images/inicio.png)
+![sample post]({{site.baseurl}}/images/inicio.PNG)
 
 
 # Header 1
@@ -26,7 +26,7 @@ como controladores PID para encontrar una solución que satisfaga el problema.
 
 ###### Header 6
 
-![sample post]({{site.baseurl}}/images/inicio.png)
+![sample post]({{site.baseurl}}/images/image-2.png)
 
 ## Paragraphs
 
