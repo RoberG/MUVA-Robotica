@@ -49,7 +49,7 @@ include: [_pages] # Includes files inside _pages directory [Do not remove this]
 
 author:
   name: Roberto Gallardo Cava
-  image: lost-10.jpg # The author image will be shown on the header. Place this image in /images/ folder.
+  image: robot.jpg # The author image will be shown on the header. Place this image in /images/ folder.
   about: Blog dónde quedarán reflejados los progresos realizados en la realización de las prácticas
 
   
