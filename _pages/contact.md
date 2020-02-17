@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-show-in-menu: yes
+show-in-menu: no
 active: active
 ---
 
