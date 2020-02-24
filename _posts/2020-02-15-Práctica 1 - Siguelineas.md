@@ -22,6 +22,6 @@ como controladores PID para encontrar una solución que satisfaga el problema.
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
-    <source src="images/v1.mkv" type="video/mkv">
+    <source src="{{site.baseurl}}/images/v1.mkv" type="video/mkv">
   </video>
 </figure>
