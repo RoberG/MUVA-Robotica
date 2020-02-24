@@ -17,14 +17,5 @@ como controladores PID para encontrar una solución que satisfaga el problema.
 
 ## First demo
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="{{site.baseurl}}/images/inicio.PNG" width="640" height="400" >
-    <source src="{{site.baseurl}}/images/v1.mp4" type="video/mp4">
-  </video>
-</figure>
-
-
-------------
-
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
