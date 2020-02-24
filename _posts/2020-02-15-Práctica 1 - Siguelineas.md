@@ -17,8 +17,8 @@ como controladores PID para encontrar una solución que satisfaga el problema.
 
 ## First demo
 
-<figure class="video_container" height="640" width="480">
-  <video controls="true" allowfullscreen="true" poster="{{site.baseurl}}/images/inicio.PNG">
-    <source src="{{site.baseurl}}/images/v1.mp4" type="video/mp4" height="640" width="480">
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="{{site.baseurl}}/images/inicio.PNG" height="640" width="480">
+    <source src="{{site.baseurl}}/images/v1.mp4" type="video/mp4" height="600" width="480">
   </video>
 </figure>
