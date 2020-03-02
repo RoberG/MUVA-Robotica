@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Followlines
+title: Followline
 description: Descriptions of the steps followed of the design and develop of the followlines
 author: Roberto Gallardo Cava
 ---
