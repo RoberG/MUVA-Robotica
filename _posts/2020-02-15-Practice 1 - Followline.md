@@ -30,9 +30,8 @@ If the formula one loses the reference line, it will go back until it finds it a
 
 #### Lights improvements
 
-The pixels are detected now by three contiguous lines to make this version more robust.
-
-A formula that calculates the speed slightly of the formula one has been added.
+* The pixels are detected now by three contiguous lines to make this version more robust.
+* A formula that calculates the speed slightly of the formula one has been added.
 
 In the following video you can see the results of this version:
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
