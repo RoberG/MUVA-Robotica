@@ -18,14 +18,14 @@ to find a solution that satisfies the problem.
 
 ## First steps
 
-The first task done was the image thresholding, just holding the red pixels of the line we have to track to make it easy to our formula one.
+The first task done was the image thresholding, just holding the red pixels of the line that has to be traced to make it easy to the formula one.
 
 ## First version
 
-
-Para el desarrollo de esta versión se ha utilizado un único controlador que mide la cantidad de píxeles que detecta una linea especifica de la imagen despues del tra
-
-
+For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image(the image was already treated). It will decided the direction
+ to turning the car in order to put it back on the line. It decided the angle of rotation using a simple formula, the number of pixels displcaces* constant k.
+ 
+If the formula one loses the reference line, it will go back until it finds it again.
 
 ### Lights improvements
 
