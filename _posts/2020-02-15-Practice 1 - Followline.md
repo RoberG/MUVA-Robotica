@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Followline
-description: Descriptions of the steps followed of the design and develop of the followlines
+description: Descriptions of the steps followed of the design and develop of the followline
 author: Roberto Gallardo Cava
 ---
 
@@ -18,7 +18,8 @@ to find a solution that satisfies the problem.
 
 ## First steps
 
-The first task done was the image thresholding, just holding the red pixels of the line that has to be traced to make it easy to the formula one.
+The first task was the thresholding of the image. It has been necessary change the colour space to HSV, because this space has greater independence of lighting, 
+followed by just holding the red pixels of the line that has to be traced to make it easy to the formula one using a colour filter. 
 
 ## First version
 
