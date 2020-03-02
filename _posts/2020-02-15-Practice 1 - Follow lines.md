@@ -22,7 +22,7 @@ The first task done was the image thresholding, just holding the red pixels of t
 
 ## First version
 
-For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image(the image was already treated). It will decided the direction
+For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image (the image was already treated). It will decided the direction
  to turning the car in order to put it back on the line. It decided the angle of rotation using a simple formula, the number of pixels displaced* constant k.
  
 If the formula one loses the reference line, it will go back until it finds it again.
@@ -30,6 +30,7 @@ If the formula one loses the reference line, it will go back until it finds it a
 #### Lights improvements
 
 The pixels are detected now by three contiguous lines to make this version more robust.
+
 A formula that calculates the speed slightly of the formula one has been added.
 
 In the following video you can see the results of this version:
