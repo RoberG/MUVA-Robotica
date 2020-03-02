@@ -1,15 +1,17 @@
 ---
 layout: post
-title: Práctica 1 - Siguelineas
-description: Memoria de la práctica 1, donde se explicarán los progresos realizados en su desarrollo
+title: Followlines
+description: 
 author: Roberto Gallardo Cava
 ---
 
-## Introducción
+## Introduction
 
-En esta práctica se pretende realizar un algortimo que se encargue del pilotaje automático de un fórmula uno en un circuito dado siguiendo una linea dibujada en la pista. 
-Dicha linea es de color rojo y se encuentra ubicada en el centro de la pista para facilitar su detección. En esta práctica se utilizarán tanto técnicas de detección de imagen 
-como controladores PID para encontrar una solución que satisfaga el problema.
+The objetive of this practice is to develop an algorithm that is responsible for the automatic piloting of a formula one in a given circuit following a line drawn on the track.
+The line is a red line and is located in the center of the track to facilitate the work of detection. In this practice, it will be used image detection techniques and PD controllers
+to find a solution that satisfies the problem.
+
+
 
 ![sample post]({{site.baseurl}}/images/inicio.PNG)
 
