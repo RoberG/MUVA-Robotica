@@ -36,3 +36,9 @@ If the formula one loses the reference line, it will go back until it finds it a
 In the following video you can see the results of this version:
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
+
+## Release version
+
+
+<iframe width="640" height="400" src="{{site.baseurl}}/images/v2.mp4" frameborder="0" allowfullscreen></iframe>
+{: .video}
