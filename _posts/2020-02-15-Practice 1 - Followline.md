@@ -44,11 +44,11 @@ second one a greater rotation. Later, the curve controller was subdivided into t
 
 The following image shows the segmentation of the image, which will decide the phase of the formula one. The yellow zone is the area of the heavy curve controller, the blue zone is the area of the 
 light curve controller, and finally, the red zone is the area of the straight controller.
+
 ![sample post]({{site.baseurl}}/images/regiones.png)
 
+The next change, was the inclussion of the D controller, using the previous frame with the objetive to give more information about the location of the formula one and being able to offer a better response.
 
-
-Algoritmo PD
 After a few hours of work, 
 
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v2.mp4" frameborder="0" allowfullscreen></iframe>
