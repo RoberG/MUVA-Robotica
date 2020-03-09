@@ -19,22 +19,22 @@ to find a solution that satisfies the problem.
 <br>
 ## First steps
 
-The first task was the thresholding of the image. It has been necessary change the colour space to HSV, because this space has greater independence of lighting, 
-followed by just holding the red pixels of the line that has to be traced to make it easy to the formula one using a colour filter. 
+First task was image thresholding. It was necessary to change the color space to HSV because this one has better light independence,
+followed by keeping red pixels of the line that has to be traced to make it easier to the formula one using a colour filter.
 
 ******************************************************************************************************************************************************************************************************************
 <br>
 ## First version
 
-For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image (the image was already treated). It will decided the direction
- to turning the car in order to put it back on the line. It decided the angle of rotation using a simple formula, the number of pixels displaced* constant k.
+For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image (the image was already treated). It will decide the direction
+ to turn the car in order to put it back on the line. It decided the angle of rotation using a simple formula, the number of pixels displaced* constant k.
  
 If the formula one loses the reference line, it will go back until it finds it again.
 
 #### Lights improvements
 
 * The pixels are detected now by three contiguous lines to make this version more robust.
-* A formula that calculates the speed slightly of the formula one has been added.
+* A formula that calculates the speed of the formula one has been added.
 
 In the following video you can see the results of this version:
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
@@ -76,7 +76,7 @@ displacement respectively, to finally be added. Each mode, not counting heavy cu
 the speed, the value of the current displacement is four times greater than the previous displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
 system. This system was solved by using least squared, generating values that can be seen in the following graph.
 ![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
-With this new way of calculating speed, the changes of speed are much more smoother and natural.
+With this new way of calculating speed, the changes of speed are much smoother and natural.
 
 Finally, after the relevant adjustments in the calculation of rotation after having changed the speed of the algorithm, a very stable version has been developed as can be seen in the following video.
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v3.mp4" frameborder="0" allowfullscreen></iframe>
