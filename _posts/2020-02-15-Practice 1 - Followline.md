@@ -61,9 +61,12 @@ formula one could end the circuit satisfactorily as you can see in the following
 
 ******************************************************************************************************************************************************************************************************************
 
+
 ## Release version
 
-The main problem of the previous version was the zigzagging.
+
+The main problem of the previous version was the zigzagging. Despite going faster, the formula one didn't follow the line properly, so the speed was delimited to gain robustness.
+Limit speeds for each stage were reset by assigning 10 for the heavy curve controller, 11 to light curve controller and 13 to the straight controller.
 
 ![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
 
