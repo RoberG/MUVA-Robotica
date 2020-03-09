@@ -13,7 +13,7 @@ to find a solution that satisfies the problem.
 
 
 
-![sample post]({{site.baseurl}}/images/inicio.PNG)
+![start image]({{site.baseurl}}/images/inicio.PNG)
 
 
 ## First steps
@@ -47,7 +47,7 @@ with the idea of making smooth transitions between states.
 The following image shows the segmentation of the image, which will decide the phase of the formula one. The yellow zone is the area of the heavy curve controller, the blue zone is the area of the 
 light curve controller, and finally, the red zone is the area of the straight controller.
 
-![sample post]({{site.baseurl}}/images/regiones.png)
+![image regions]({{site.baseurl}}/images/regiones.png)
 
 The next change, was the inclussion of the D controller, using the previous frame with the objetive to give more information about the location of the formula one and being able to offer a better response,
 redisigning the functions of the speed and rotation calculations.
@@ -60,6 +60,9 @@ formula one could end the circuit satisfactorily as you can see in the following
 
 
 ## Release version
+
+
+![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
 
 Estabilidad a cambio de velocidad.->>Robustez
 Ajustes sobre los valores.
