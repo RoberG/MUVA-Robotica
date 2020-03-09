@@ -41,7 +41,8 @@ In the following video you can see the results of this version:
 ## Intermediate version
 
 The first relevant change that should be discussed was the division of the general controller created into the straight controller and the curve controller, giving to the fist one a greater speed and the 
-second one a greater rotation. Later, the curve controller was subdivided into two controllers, the light curve controller and the heavy curve controller, giving to the first one a light rotation.
+second one a greater rotation. Later, the curve controller was subdivided into two controllers, the light curve controller and the heavy curve controller, giving to the first one a light rotation,
+with the idea of making smooth transitions between states.
 
 The following image shows the segmentation of the image, which will decide the phase of the formula one. The yellow zone is the area of the heavy curve controller, the blue zone is the area of the 
 light curve controller, and finally, the red zone is the area of the straight controller.
@@ -52,7 +53,7 @@ The next change, was the inclussion of the D controller, using the previous fram
 redisigning the functions of the speed and rotation calculations.
 
 At this point in the development, special emphasis was placed on a considerable increase in the car speed. After a few hours of work, the values associated to the calculations were fixed, and finally the 
-formula one could end the circuit satisfactorily.
+formula one could end the circuit satisfactorily as you can see in the following video.
 
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v2.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
