@@ -69,11 +69,10 @@ The main problem of the previous version was the zigzagging. Despite going faste
 Limit speeds for each stage were reset by assigning 10 for the heavy curve controller, 11 to light curve controller and 13 to the straight controller. With these small changes, the formula
 one improved significantly in the line tracking.
 
-The next objective was to try to properly approximate the speed formula. At this point, the speed depends of two constans, wich will be multiplied by the displacement and the previous
+The next objective was to try to properly approximate the speed formula, so far, the formulas have been estimated by trial and error. At this point, the speed depends of two constans, wich will be multiplied by the displacement and the previous
 displacement respectively, to finally be added. Each mode, not counting heavy curves controller, has an upper limit and a lowe limit, and it has been estimated that for the calculation of
 the speed, the value of the curren displacement is four times greater than the past displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
 system. This system was solved by using least squared, generating values that can be seen in the following graph.
-
 ![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
 
 Estabilidad a cambio de velocidad.->>Robustez
