@@ -44,7 +44,7 @@ In the following video you can see the results of this version:
 <br>
 ## Intermediate version
 
-The first relevant change that should be discussed was the division of the general controller created into the straight controller and the curve controller, giving to the fist one a greater speed and the 
+The first relevant change that should be discussed, was the division of the general controller created into the straight controller and the curve controller, giving to the fist one a greater speed and the 
 second one a greater rotation. Later, the curve controller was subdivided into two controllers, the light curve controller and the heavy curve controller, giving to the first one a light rotation,
 with the idea of making smooth transitions between states.
 
@@ -69,11 +69,11 @@ formula one could end the circuit satisfactorily as you can see in the following
 
 The main problem of the previous version was the zigzagging. Despite going faster, the formula one didn't follow the line properly, so the speed was delimited to gain robustness.
 Limit speeds for each stage were reset by assigning 10 for the heavy curve controller, 11 to light curve controller and 13 to the straight controller. With these small changes, the formula
-one improved significantly in the line tracking.
+one improved significantly in the line tracking. The areas of the states were readjusted too.
 
 The next objective was to try to properly approximate the speed formula, so far, the formulas have been estimated by trial and error. At this point, the speed depends of two constans, wich will be multiplied by the displacement and the previous
 displacement respectively, to finally be added. Each mode, not counting heavy curves controller, has an upper limit and a lower limit, and it has been estimated that for the calculation of
-the speed, the value of the current displacement is four times greater than the past displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
+the speed, the value of the current displacement is four times greater than the previous displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
 system. This system was solved by using least squared, generating values that can be seen in the following graph.
 ![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
 With this new way of calculating speed, the changes of speed are much more smoother and natural.
