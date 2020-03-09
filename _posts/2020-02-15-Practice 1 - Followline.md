@@ -59,8 +59,11 @@ formula one could end the circuit satisfactorily as you can see in the following
 {: .video}
 
 
+
+
 ## Release version
 
+One of the first conclusions of the last version, was the zigzageo.
 
 ![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
 
