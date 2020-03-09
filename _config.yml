@@ -8,7 +8,7 @@
 # Site settings
 title: Roberto Gallardo Cava
 description: > # this means to ignore newlines until "baseurl:"
-  Blog compendium about the solutions of the practices of the Robotica course of the Master Universitario Visión Artificial
+  Blog compendium about the solutions of the practices of the Robotica course of the Master Universitario Vision Artificial
 baseurl: "/MUVA-Robotica" # the subpath of your site, e.g. /blog
 url: "/MUVA-Robotica"
 permalink: :title/
