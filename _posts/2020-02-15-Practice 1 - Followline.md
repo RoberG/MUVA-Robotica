@@ -60,8 +60,7 @@ formula one could end the circuit satisfactorily as you can see in the following
 
 
 ******************************************************************************************************************************************************************************************************************
-
-  
+\  
 ## Release version
 
 
@@ -70,20 +69,21 @@ Limit speeds for each stage were reset by assigning 10 for the heavy curve contr
 one improved significantly in the line tracking.
 
 The next objective was to try to properly approximate the speed formula, so far, the formulas have been estimated by trial and error. At this point, the speed depends of two constans, wich will be multiplied by the displacement and the previous
-displacement respectively, to finally be added. Each mode, not counting heavy curves controller, has an upper limit and a lowe limit, and it has been estimated that for the calculation of
-the speed, the value of the curren displacement is four times greater than the past displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
+displacement respectively, to finally be added. Each mode, not counting heavy curves controller, has an upper limit and a lower limit, and it has been estimated that for the calculation of
+the speed, the value of the current displacement is four times greater than the past displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
 system. This system was solved by using least squared, generating values that can be seen in the following graph.
 ![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
+With this new way of calculating speed, the changes of speed are much more smoother and natural.
 
-Estabilidad a cambio de velocidad.->>Robustez
-Ajustes sobre los valores.
-Minimos cuadrados.
-
+Finally, after the relevant adjustments in the calculation of rotation after having changed the speed of the algorithm, a very stable version has been developed as can be seen in the following video.
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v3.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
 
+******************************************************************************************************************************************************************************************************************
 
 ## Cosas descartadas
 
 * Coche muy follado
 * Puntos de referencia a distintas alturas
+
+pr\ueba\ho\\la
