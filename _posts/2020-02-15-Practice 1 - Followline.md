@@ -37,6 +37,7 @@ In the following video you can see the results of this version:
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
 
+
 ## Intermediate version
 
 The first relevant change that should be discussed was the division of the general controller created into the straight controller and the curve controller, giving to the fist one a greater speed and the 
@@ -47,9 +48,11 @@ light curve controller, and finally, the red zone is the area of the straight co
 
 ![sample post]({{site.baseurl}}/images/regiones.png)
 
-The next change, was the inclussion of the D controller, using the previous frame with the objetive to give more information about the location of the formula one and being able to offer a better response.
+The next change, was the inclussion of the D controller, using the previous frame with the objetive to give more information about the location of the formula one and being able to offer a better response,
+redisigning the functions of the speed and rotation calculations.
 
-After a few hours of work, 
+At this point in the development, special emphasis was placed on a considerable increase in the car speed. After a few hours of work, the values associated to the calculations were fixed, and finally the 
+formula one could end the circuit satisfactorily.
 
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v2.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
