@@ -15,12 +15,14 @@ to find a solution that satisfies the problem.
 
 ![start image]({{site.baseurl}}/images/inicio.PNG)
 
-
+******************************************************************************************************************************************************************************************************************
+<br>
 ## First steps
 
 The first task was the thresholding of the image. It has been necessary change the colour space to HSV, because this space has greater independence of lighting, 
 followed by just holding the red pixels of the line that has to be traced to make it easy to the formula one using a colour filter. 
-
+******************************************************************************************************************************************************************************************************************
+<br>
 ## First version
 
 For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image (the image was already treated). It will decided the direction
@@ -37,7 +39,8 @@ In the following video you can see the results of this version:
 <iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
 {: .video}
 
-
+******************************************************************************************************************************************************************************************************************
+<br>
 ## Intermediate version
 
 The first relevant change that should be discussed was the division of the general controller created into the straight controller and the curve controller, giving to the fist one a greater speed and the 
@@ -63,7 +66,6 @@ formula one could end the circuit satisfactorily as you can see in the following
 <br>
 ## Release version
 
-
 The main problem of the previous version was the zigzagging. Despite going faster, the formula one didn't follow the line properly, so the speed was delimited to gain robustness.
 Limit speeds for each stage were reset by assigning 10 for the heavy curve controller, 11 to light curve controller and 13 to the straight controller. With these small changes, the formula
 one improved significantly in the line tracking.
@@ -81,8 +83,11 @@ Finally, after the relevant adjustments in the calculation of rotation after hav
 
 ******************************************************************************************************************************************************************************************************************
 <br>
-## Cosas descartadas
+## Discarded ideas
 
-* Coche muy follado
+This section will contain the ideas that were tried to implement but didn't give the expected results.
+
+* High speed version: In one version developed, the formula one reached speeds between 25 and 30, but was extremely unstable, finishing few races, and very rarely following the line, which is the main reason
+of the practice.
 * Puntos de referencia a distintas alturas
 
