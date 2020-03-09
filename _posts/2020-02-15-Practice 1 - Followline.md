@@ -86,4 +86,3 @@ Finally, after the relevant adjustments in the calculation of rotation after hav
 * Coche muy follado
 * Puntos de referencia a distintas alturas
 
-pr\ueba\ho\\la
