@@ -29,7 +29,11 @@ of the objects that it will be use to reconstruct it.
 Once the reference points in both images have been obtained, the next job is the matching. It will start from a characteristic point in the left image, and with the help of the 
 epipolar geometry, it will match the homologous point in the right image, getting the same point, in pixel coordinates in both images.
 
-#### Lights aaaaaaa
+#### Epipolar restriction
+
+Serching the homologous point in the entire image would be very expensive, so to speed up this process, this restriction will be very useful.
+
+The epipolar restriction says that the homologous point of one point(P1) in the image(I1), is found on the epopolar line(L2) that associate the point P1 with the other image(I2).
 
 * The pixels are detected now by three contiguous lines to make this version more robust.
 * A formula that calculates the speed of the formula one has been added.
