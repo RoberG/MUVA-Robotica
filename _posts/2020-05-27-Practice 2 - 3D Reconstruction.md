@@ -65,6 +65,9 @@ Due with *triangulatePoints* a satisfactory result was not obtained, the triangu
 
 In this image, you can see the final result using the opencv method.
 
+![full triangulatepoints]({{site.baseurl}}/images/full_triangulatepoints.png)
+
+
 ******************************************************************************************************************************************************************************************************************
 <br>
 ## Release version
