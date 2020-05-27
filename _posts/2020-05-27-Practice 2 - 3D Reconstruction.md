@@ -26,7 +26,6 @@ of the objects that will be used to reconstruct it.
 <br>
 ## Main task
 
-#### Matching
 
 Once the reference points in both images have been obtained, the next step is the matching. It will start from a characteristic point in the left image, and with the help of the 
 epipolar geometry, it will match the homologous point in the right image, getting the same point, in pixel coordinates in both images.
@@ -43,7 +42,7 @@ There are several ways to calculate the epipolar line. In this practice, there a
 the optical enter (C1) of the left camera can be get. The trick will be project C1 and the interest point that is being analyzed (using the projection matrix, P1 = K \* [RT]) in the image2,
 and with two points you can get a straight line. Since this is a canonical system, these epipolar lines will always be parallel.
 
-#### Patching
+#### Matching and patches
 
 At this point, a patch from the left image with the point to find will be obtained, using a neighbord radius (after trying different values, the neigbord radius was set to 8 pixels). Patches will be calculated
 patches in the right image through the epipolar line, with the same conditions.  In the practice, the homologous point will be searched in a epipolar stripe, not in the main line, because
