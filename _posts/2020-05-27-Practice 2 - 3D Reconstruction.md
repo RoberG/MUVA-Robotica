@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Followline
-description: Descriptions of the steps followed of the design and develop of the followline
+title: 3D Reconstruction
+description: Development of the 3D Reconstruction
 author: Roberto Gallardo Cava
 ---
 
 ## Introduction
 
-The objetive of this practice is to develop an algorithm to be able to reconstruct a 3D scene, in a point cloud, from a canonical stereo systemt consisting of two cameras.
+The objetive of this practice is to develop an algorithm to be able to reconstruct a 3D scene, with objects of various sizes and color, and represent it in a point cloud.
+The used system is a canonical stereo formed by two cameras.
 
 
-![start image]({{site.baseurl}}/images/inicio.PNG)
+![start image]({{site.baseurl}}/images/3d_reconstruction.png)
 
 ******************************************************************************************************************************************************************************************************************
 <br>
