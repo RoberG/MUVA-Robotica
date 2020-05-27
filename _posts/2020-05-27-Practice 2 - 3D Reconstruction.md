@@ -70,8 +70,8 @@ system. This system was solved by using least squared, generating values that ca
 With this new way of calculating speed, the changes of speed are much smoother and natural.
 
 Finally, after the relevant adjustments in the calculation of rotation after having changed the speed of the algorithm, a very stable version has been developed as can be seen in the following video.
-<iframe width="640" height="400" src="{{site.baseurl}}/images/v3.mp4" frameborder="0" allowfullscreen></iframe>
-{: .video}
+
+![3D Recon]({{site.baseurl}}/images/3d_recon.gif)
 
 ******************************************************************************************************************************************************************************************************************
 <br>
