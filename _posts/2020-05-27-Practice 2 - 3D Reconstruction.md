@@ -52,7 +52,7 @@ that returns how similar are the two patches. The threshold was set in 0.95 to b
 
 And finally, one you have all the ingredients, the homologous points in both images and the projection matrix P1 and P2, as previously was explained. Using the method *triangulatePoints*
 of the opencv library  with this parameters, will return the 3D position of the homologous point. This method calculates the intersection of the backpropagation lines between both optical
-centers and the homologous points.
+centers and the homologous points. To get the color of the point, just get the color at the point(pixel) in one of the original images.
 
 ******************************************************************************************************************************************************************************************************************
 <br>
@@ -79,8 +79,12 @@ Finally, after the relevant adjustments in the calculation of rotation after hav
 
 This section will contain the ideas that were tried to implement but didn't give the expected results.
 
-* High speed version: In one version developed, the formula one reached speeds between 25 and 30, but was extremely unstable, finishing few races, and very rarely following the line, which is the main reason
-of the practice.
-* Reference lines at different heights: In the project present, the reference lines are together, the idea was to separate them at different heights, to cover more information of the image. Having three lines, long, medium and short distance.
-This idea was tried to implement in a very advanced phase of the project, so after attempts that did not give the expected results and the amount of changes involved in the project, the idea was finally discarded.
+* High Number of Points: In one version developed, an attempt was made to increase the number of points to obtain a much richer map, using a dilation, a morphological operation, that returns
+a considerable higer amount of interest points. The speed of the 3D representation highly decresed, due hardware and software limitations, so finally the idea was discarded.
+
+![no dilate left]({{site.baseurl}}/images/left_dilate.jpeg)
+
+In this image you can see the 3D plots, with 25800 points without color (not implemented in this version). Bowsers head and the box are clearly distinguishable.
+![no dilate left]({{site.baseurl}}/images/25800.jpeg)
+
 
