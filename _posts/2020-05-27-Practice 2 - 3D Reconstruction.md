@@ -80,11 +80,11 @@ Finally, after the relevant adjustments in the calculation of rotation after hav
 This section will contain the ideas that were tried to implement but didn't give the expected results.
 
 * High Number of Points: In one version developed, an attempt was made to increase the number of points to obtain a much richer map, using a dilation, a morphological operation, that returns
-a considerable higer amount of interest points. The speed of the 3D representation highly decresed, due hardware and software limitations, so finally the idea was discarded.
+a considerable higer amount of interest points. The speed of the 3D representation highly decresed, due hardware and software limitations, so finally the idea was discarded. In this image
+ you can see the results of the filtering and the 3D plots, with 25800 points without color (not implemented in this version). Bowsers head and the box are clearly distinguishable.
 
 ![no dilate left]({{site.baseurl}}/images/left_dilate.jpeg)
 
-In this image you can see the 3D plots, with 25800 points without color (not implemented in this version). Bowsers head and the box are clearly distinguishable.
-![no dilate left]({{site.baseurl}}/images/25800.jpeg)
+![no dilate left]({{site.baseurl}}/images/2500_points.jpeg)
 
 
