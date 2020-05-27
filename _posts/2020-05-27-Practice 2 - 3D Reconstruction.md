@@ -37,8 +37,8 @@ The epipolar restriction says that the homologous point of one point (P1) in the
 
 ![no dilate left]({{site.baseurl}}/images/epipolar_geometry.png)
 
-There are several ways to calculate the epipolar line. In this practice, there are two calibrated cameras, with the extrinsincs and intrinsics parameters, so, using the formula -R*t, 
-the optical enter(C1) of the left camera can be get. The trick will be project C1 and the interest point that is being analyzed (using the projection matrix P1=K*[RT]) in the image2,
+There are several ways to calculate the epipolar line. In this practice, there are two calibrated cameras, with the extrinsincs and intrinsics parameters, so, using the formula -R \* t, 
+the optical enter(C1) of the left camera can be get. The trick will be project C1 and the interest point that is being analyzed (using the projection matrix P1 = K \* [RT]) in the image2,
 and with two points you can get a straight line.
 
 ******************************************************************************************************************************************************************************************************************
