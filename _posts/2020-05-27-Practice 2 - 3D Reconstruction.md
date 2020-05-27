@@ -41,7 +41,7 @@ The epipolar restriction says that the homologous point of one point (P1) in the
 
 There are several ways to calculate the epipolar line. In this practice, there are two calibrated cameras, with the extrinsincs and intrinsics parameters, so, using the formula -R \* t, 
 the optical enter (C1) of the left camera can be get. The trick will be project C1 and the interest point that is being analyzed (using the projection matrix, P1 = K \* [RT]) in the image2,
-and with two points you can get a straight line. Since there are a canonical system, these epipolar lines will always be parallel lines.
+and with two points you can get a straight line. Since this is a canonical system, these epipolar lines will always be parallel.
 
 #### Patching
 
@@ -55,6 +55,15 @@ that returns how similar the two patches are. The threshold was set in 0.95 to b
 And finally, once you have all the ingredients, the homologous points in both images and the projection matrix P1 and P2. Using the method *triangulatePoints*
 of the opencv library  with these parameters, it will return the 3D position of the homologous point. This method calculates the intersection of the backpropagation lines between both optical
 centers and the homologous points. To get the colour of the point, just get the colour at the point(pixel) from one of the original images.
+
+
+******************************************************************************************************************************************************************************************************************
+<br>
+## Changes in the triangulation
+
+Due with *triangulatePoints* a satisfactory result was not obtained, the triangulate method was changed using the pure formulas and aplying the geometrics constraints of the problem.
+
+In this image, you can see the final result using the opencv method.
 
 ******************************************************************************************************************************************************************************************************************
 <br>
