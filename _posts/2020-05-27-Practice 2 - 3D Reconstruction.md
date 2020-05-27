@@ -71,20 +71,15 @@ In this image, you can see the final result using the opencv method.
 <br>
 ## Release version
 
-The main problem of the previous version was the zigzagging. Despite going faster, the formula one didn't follow the line properly, so the speed was delimited to gain robustness.
-Limit speeds for each stage were reset by assigning 10 for the heavy curve controller, 11 to light curve controller and 13 to the straight controller. With these small changes, the formula
-one improved significantly in the line tracking. The areas of the states were readjusted too.
+Following all the steps described in this report and after a period of trial and error adjusting the threshold values ​​and exploring different ways of obtaining certain results, such as the disparity,
+a release version has been reached. In these images you can see the final result.
 
-The next objective was to try to properly approximate the speed formula, so far, the formulas have been estimated by trial and error. At this point, the speed depends of two constans, wich will be multiplied by the displacement and the previous
-displacement respectively, to finally be added. Each mode, not counting heavy curves controller, has an upper limit and a lower limit, and it has been estimated that for the calculation of
-the speed, the value of the current displacement is four times greater than the previous displacement. This ends up resulting in a system of three equations with two unknowns, an overdetermined
-system. This system was solved by using least squared, generating values that can be seen in the following graph.
-![image regions]({{site.baseurl}}/images/grafica_velocidad.png)
-With this new way of calculating speed, the changes of speed are much smoother and natural.
+![full triangulatepoints]({{site.baseurl}}/images/final.jpg)
+![full triangulatepoints]({{site.baseurl}}/images/planos.jpg)
 
-Finally, after the relevant adjustments in the calculation of rotation after having changed the speed of the algorithm, a very stable version has been developed as can be seen in the following video.
 
-![3D Recon]({{site.baseurl}}/images/3d_recon.gif)
+In the following gif, you can see the complete process.
+![3D Recon Gif]({{site.baseurl}}/images/3d_recon.gif)
 
 ******************************************************************************************************************************************************************************************************************
 <br>
