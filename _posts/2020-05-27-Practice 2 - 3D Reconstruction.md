@@ -38,8 +38,19 @@ The epipolar restriction says that the homologous point of one point (P1) in the
 ![no dilate left]({{site.baseurl}}/images/epipolar_geometry.png)
 
 There are several ways to calculate the epipolar line. In this practice, there are two calibrated cameras, with the extrinsincs and intrinsics parameters, so, using the formula -R \* t, 
-the optical enter(C1) of the left camera can be get. The trick will be project C1 and the interest point that is being analyzed (using the projection matrix P1 = K \* [RT]) in the image2,
-and with two points you can get a straight line.
+the optical enter (C1) of the left camera can be get. The trick will be project C1 and the interest point that is being analyzed (using the projection matrix, P1 = K \* [RT]) in the image2,
+and with two points you can get a straight line. Since there are a canonical system, these epipolar lines will always be parallel lines.
+
+#### Patching
+
+
+At this points, it will be obtained a patch from the left image with the point to find, using a neighbord radius(After trying different values, the neigbord radius was set to 8 pixels). It will be calculate
+patches in the right image through the epipolar line, with the same conditions. The patches will be compared using the TM_CCOEFF_NORMED algorithm, that returns how similar are the two patches. The threshold
+was set in 0.95, being 1 the maximum.
+
+#### Triangulation
+
+
 
 ******************************************************************************************************************************************************************************************************************
 <br>
