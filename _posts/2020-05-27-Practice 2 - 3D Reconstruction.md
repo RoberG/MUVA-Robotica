@@ -35,12 +35,7 @@ Serching the homologous point in the entire image would be very expensive, so to
 
 The epipolar restriction says that the homologous point of one point(P1) in the image(I1), is found on the epopolar line(L2) that associate the point P1 with the other image(I2).
 
-* The pixels are detected now by three contiguous lines to make this version more robust.
-* A formula that calculates the speed of the formula one has been added.
-
-In the following video you can see the results of this version:
-<iframe width="640" height="400" src="{{site.baseurl}}/images/v1.mp4" frameborder="0" allowfullscreen></iframe>
-{: .video}
+![no dilate left]({{site.baseurl}}/images/epipolar_geometry.png)
 
 ******************************************************************************************************************************************************************************************************************
 <br>
