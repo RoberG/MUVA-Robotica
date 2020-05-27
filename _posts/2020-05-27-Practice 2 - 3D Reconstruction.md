@@ -46,33 +46,10 @@ and with two points you can get a straight line. Since there are a canonical sys
 
 At this points, it will be obtained a patch from the left image with the point to find, using a neighbord radius(After trying different values, the neigbord radius was set to 8 pixels). It will be calculate
 patches in the right image through the epipolar line, with the same conditions. The patches will be compared using the TM_CCOEFF_NORMED algorithm, that returns how similar are the two patches. The threshold
-was set in 0.95, being 1 the maximum.
+was set in 0.95, being 1 the maximum possible.
 
 #### Triangulation
 
-
-
-******************************************************************************************************************************************************************************************************************
-<br>
-## Intermediate version
-
-The first relevant change that should be discussed, was the division of the general controller created into the straight controller and the curve controller, giving to the fist one a greater speed and the 
-second one a greater rotation. Later, the curve controller was subdivided into two controllers, the light curve controller and the heavy curve controller, giving to the first one a light rotation,
-with the idea of making smooth transitions between states.
-
-The following image shows the segmentation of the image, which will decide the phase of the formula one. The yellow zone is the area of the heavy curve controller, the blue zone is the area of the 
-light curve controller, and finally, the red zone is the area of the straight controller.
-
-![image regions]({{site.baseurl}}/images/regiones.png)
-
-The next change, was the inclussion of the D controller, using the previous frame with the objetive to give more information about the location of the formula one and being able to offer a better response,
-redisigning the functions of the speed and rotation calculations.
-
-At this point in the development, special emphasis was placed on a considerable increase in the car speed. After a few hours of work, the values associated to the calculations were fixed, and finally the 
-formula one could end the circuit satisfactorily as you can see in the following video.
-
-<iframe width="640" height="400" src="{{site.baseurl}}/images/v2.mp4" frameborder="0" allowfullscreen></iframe>
-{: .video}
 
 
 ******************************************************************************************************************************************************************************************************************
