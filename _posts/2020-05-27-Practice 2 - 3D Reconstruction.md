@@ -44,7 +44,7 @@ and with two points you can get a straight line. Since there are a canonical sys
 #### Patching
 
 
-At this points, it will be obtained a patch from the left image with the point to find, using a neighbord radius(After trying different values, the neigbord radius was set to 8 pixels). It will be calculate
+At this points, it will be obtained a patch from the left image with the point to find, using a neighbord radius (after trying different values, the neigbord radius was set to 8 pixels). It will be calculate
 patches in the right image through the epipolar line, with the same conditions. The patches will be compared using the TM_CCOEFF_NORMED algorithm, that returns how similar are the two patches. The threshold
 was set in 0.95, being 1 the maximum possible.
 
