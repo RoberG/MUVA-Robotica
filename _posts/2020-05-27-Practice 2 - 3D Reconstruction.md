@@ -17,8 +17,11 @@ The used system is a canonical stereo formed by two cameras.
 <br>
 ## First steps
 
-First task was image thresholding. It was necessary to change the color space to HSV because this one has better light independence,
-followed by keeping red pixels of the line that has to be traced to make it easier to the formula one using a colour filter.
+Like any good computer vision problem, the first task was the thresholding. The colour space, in both images will be change to grayscale, to later apply a Canny filter, to get the borders
+of the objects that it will be use to reconstruct it.
+
+![no dilate left]({{site.baseurl}}/images/left_no_dilate.jpeg)
+![no dilate right]({{site.baseurl}}/images/right_no_dilate.jpeg)
 
 ******************************************************************************************************************************************************************************************************************
 <br>
