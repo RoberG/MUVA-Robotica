@@ -31,7 +31,7 @@ For the development of this version, a single controller has been used that meas
  
 If the formula one loses the reference line, it will go back until it finds it again.
 
-#### Lights improvements
+#### Lights aaaaaaa
 
 * The pixels are detected now by three contiguous lines to make this version more robust.
 * A formula that calculates the speed of the formula one has been added.
