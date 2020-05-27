@@ -95,4 +95,6 @@ a considerable higer amount of interest points. The speed of the 3D representati
 
 ![25000 points]({{site.baseurl}}/images/25000_points.jpeg)
 
+* Overfit model: There is a version in which the matching is not done over the entire epipolar line, but is done over a maximum displacement threshold. This idea was discarded because it generates
+an overtifit model, because you need a prori knoledge of the image disparity.
 
