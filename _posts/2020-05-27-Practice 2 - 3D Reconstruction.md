@@ -20,12 +20,11 @@ The used system is a canonical stereo formed by two cameras.
 Like any good computer vision problem, the first task was the thresholding. The colour space, in both images will be change to grayscale, to later apply a Canny filter, to get the borders
 of the objects that it will be use to reconstruct it.
 
-![no dilate left]({{site.baseurl}}/images/left_no_dilate.jpeg)
-![no dilate right]({{site.baseurl}}/images/right_no_dilate.jpeg)
+![no dilate left]({{site.baseurl}}/images/left_no_dilate.jpeg)![no dilate right]({{site.baseurl}}/images/right_no_dilate.jpeg)
 
 ******************************************************************************************************************************************************************************************************************
 <br>
-## First version
+## Main task
 
 For the development of this version, a single controller has been used that measures the amount of pixels of a specific line in the image (the image was already treated). It will decide the direction
  to turn the car in order to put it back on the line. It decided the angle of rotation using a simple formula, the number of pixels displaced* constant k.
