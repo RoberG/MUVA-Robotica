@@ -43,14 +43,16 @@ and with two points you can get a straight line. Since there are a canonical sys
 
 #### Patching
 
-
 At this points, it will be obtained a patch from the left image with the point to find, using a neighbord radius (after trying different values, the neigbord radius was set to 8 pixels). It will be calculate
-patches in the right image through the epipolar line, with the same conditions. The patches will be compared using the TM_CCOEFF_NORMED algorithm, that returns how similar are the two patches. The threshold
-was set in 0.95, being 1 the maximum possible.
+patches in the right image through the epipolar line, with the same conditions.  In the practice, the hologous point will be search in a epipolar stripe, not in the main line, because
+ ther may be slight calibration errors. The patches will be compared using the TM_CCOEFF_NORMED algorithm (using the method *matchTemplate* included in opencv library),
+that returns how similar are the two patches. The threshold was set in 0.95 to be the correlation accepted, being 1 the maximum possible.
 
 #### Triangulation
 
-
+And finally, one you have all the ingredients, the homologous points in both images and the projection matrix P1 and P2, as previously was explained. Using the method *triangulatePoints*
+of the opencv library  with this parameters, will return the 3D position of the homologous point. This method calculates the intersection of the backpropagation lines between both optical
+centers and the homologous points.
 
 ******************************************************************************************************************************************************************************************************************
 <br>
